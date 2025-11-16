@@ -39,6 +39,20 @@ add_custom_command(
   DEPENDS ${CMAKE_CURRENT_SOURCE_DIR}/definitions/graph.capnp
 )
 
+add_custom_target(lite3_build
+    COMMAND make -j
+    WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/external_lib/lite3
+    BYPRODUCTS ${CMAKE_CURRENT_SOURCE_DIR}/external_lib/lite3/build/liblite3.a
+    COMMENT "Building lite3 with make"
+)
+
+add_library(lite3 STATIC IMPORTED GLOBAL)
+set_target_properties(lite3 PROPERTIES
+    IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/external_lib/lite3/build/liblite3.a
+    INTERFACE_INCLUDE_DIRECTORIES ${CMAKE_CURRENT_SOURCE_DIR}/external_lib/lite3/include
+)
+add_dependencies(lite3 lite3_build)
+
 add_executable(cpp-serialization-benchmark
   ${CMAKE_CURRENT_BINARY_DIR}/graph.capnp.h
   ${CMAKE_CURRENT_BINARY_DIR}/graph.capnp.c++
@@ -51,6 +65,7 @@ target_link_libraries(cpp-serialization-benchmark
   flatbuffers
   capnp
   cereal
+  lite3
 )
 target_include_directories(cpp-serialization-benchmark PUBLIC
   include

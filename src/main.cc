@@ -7,6 +7,8 @@
 #include "csb/benches/cista_raw.h"
 #include "csb/benches/fbs.h"
 #include "csb/benches/zpp_bits.h"
+#include "csb/benches/lite3.h"
+#include "csb/benches/lite3_context_api.h"
 
 using namespace csb;
 
@@ -86,6 +88,8 @@ BENCHMARK_TEMPLATE(BM_SERIALIZE, cista_raw_bench)
 BENCHMARK_TEMPLATE(BM_SERIALIZE, cista_offset_bench)
     ->Unit(benchmark::kMillisecond);
 BENCHMARK_TEMPLATE(BM_SERIALIZE, zpp_bits_bench)->Unit(benchmark::kMillisecond);
+BENCHMARK_TEMPLATE(BM_SERIALIZE, lite3_bench)->Unit(benchmark::kMillisecond);
+BENCHMARK_TEMPLATE(BM_SERIALIZE, lite3_context_api_bench)->Unit(benchmark::kMillisecond);
 
 BENCHMARK_TEMPLATE(BM_SAFE_DESERIALIZE, capnp_bench)
     ->Unit(benchmark::kMillisecond);
@@ -100,6 +104,10 @@ BENCHMARK_TEMPLATE(BM_SAFE_DESERIALIZE, cista_raw_bench)
 BENCHMARK_TEMPLATE(BM_SAFE_DESERIALIZE, cereal_bench)
     ->Unit(benchmark::kMillisecond);
 BENCHMARK_TEMPLATE(BM_SAFE_DESERIALIZE, zpp_bits_bench)
+    ->Unit(benchmark::kMillisecond);    
+BENCHMARK_TEMPLATE(BM_SAFE_DESERIALIZE, lite3_bench)
+    ->Unit(benchmark::kMillisecond);
+BENCHMARK_TEMPLATE(BM_SAFE_DESERIALIZE, lite3_context_api_bench)
     ->Unit(benchmark::kMillisecond);
 
 /* Nothing to benchmark here: it's essentially a pointer cast.
@@ -127,6 +135,8 @@ BENCHMARK_TEMPLATE(BM_TRAVERSE, cereal_bench)->Unit(benchmark::kMillisecond);
 BENCHMARK_TEMPLATE(BM_TRAVERSE, fbs_bench)->Unit(benchmark::kMillisecond);
 BENCHMARK_TEMPLATE(BM_TRAVERSE, capnp_bench)->Unit(benchmark::kMillisecond);
 BENCHMARK_TEMPLATE(BM_TRAVERSE, zpp_bits_bench)->Unit(benchmark::kMillisecond);
+BENCHMARK_TEMPLATE(BM_TRAVERSE, lite3_bench)->Unit(benchmark::kMillisecond);
+BENCHMARK_TEMPLATE(BM_TRAVERSE, lite3_context_api_bench)->Unit(benchmark::kMillisecond);
 
 BENCHMARK_TEMPLATE(BM_FAST_DESERIALIZE_AND_TRAVERSE, cista_offset_slim_bench)
     ->Unit(benchmark::kMillisecond);
@@ -141,6 +151,10 @@ BENCHMARK_TEMPLATE(BM_FAST_DESERIALIZE_AND_TRAVERSE, cereal_bench)
 BENCHMARK_TEMPLATE(BM_FAST_DESERIALIZE_AND_TRAVERSE, capnp_bench)
     ->Unit(benchmark::kMillisecond);
 BENCHMARK_TEMPLATE(BM_FAST_DESERIALIZE_AND_TRAVERSE, zpp_bits_bench)
+    ->Unit(benchmark::kMillisecond);
+BENCHMARK_TEMPLATE(BM_FAST_DESERIALIZE_AND_TRAVERSE, lite3_bench)
+    ->Unit(benchmark::kMillisecond);
+BENCHMARK_TEMPLATE(BM_FAST_DESERIALIZE_AND_TRAVERSE, lite3_context_api_bench)
     ->Unit(benchmark::kMillisecond);
 
 BENCHMARK_MAIN();

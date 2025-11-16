@@ -12,7 +12,7 @@
 	url = https://github.com/USCiLab/cereal.git
 [submodule "external_lib/cista"]
 	path = external_lib/cista
-	url = git@github.com:felixguendling/cista.git
+	url = https://github.com/felixguendling/cista.git
 [submodule "external_lib/zpp_bits"]
 	path = external_lib/zpp_bits
 	url = https://github.com/eyalz800/zpp_bits
