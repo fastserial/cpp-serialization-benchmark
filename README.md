@@ -1,3 +1,78 @@
+# Cpp Serialization Benchmark
+This repository has been forked from [the original](https://github.com/felixguendling/cpp-serialization-benchmark) to add the Lite³ format to the benchmarks.
+
+![](lite3_benchmark_cpp_serialization.png)
+
+| Name                  | Serialize + Deserialize | Deserialize | Serialize   | Traverse    | Deserialize and traverse | Message size    |
+| --------------------- |------------------------ | ----------- | ----------- | ----------- | ------------------------ | --------------- |
+| Cap’n Proto           | **66.55 ms**            | 0 ms        | 66.55 ms    | 210.1 ms    | 211 ms                   | 50.5093 MB      |
+| cereal                | **229.16 ms**           | 98.76 ms    | 130.4 ms    | 79.17 ms    | 180.7 ms                 | 37.829 MB       |
+| Cista++ (offset)      | **913.2 ms**            | 274.1 ms    | 639.1 ms    | 79.59 ms    | 80.02 ms                 | 176.378 MB      |
+| Cista++ (offset slim) | **3.96 ms**             | 0.17 ms     | 3.79 ms     | 79.99 ms    | 80.46 ms                 | 25.317 MB       |
+| Cista++ (raw)         | **947.4 ms**            | 289.2 ms    | 658.2 ms    | 81.53 ms    | 113.3 ms                 | 176.378 MB      |
+| Flatbuffers           | **1887.49 ms**          | 41.69 ms    | 1845.8 ms   | 90.53 ms    | 90.35 ms                 | 62.998 MB       |
+| Lite³ Buffer API      | **7.79 ms**             | 4.77 ms     | 3.02 ms     | 79.39 ms    | 84.92 ms                 | 38.069 MB       |
+| Lite³ Context API     | **7.8 ms**              | 4.76 ms     | 3.04  ms    | 79.59 ms    | 84.13 ms                 | 38.069 MB       |
+| zpp::bits             | **4.66 ms**             | 1.9 ms      | 2.76 ms     | 78.66 ms    | 81.21 ms                 | 37.8066 MB      |
+
+Benchmark data:
+- [cpp_serialization_benchmark_output.txt](cpp_serialization_benchmark_output.txt)
+- [cpp_serialization.csv](cpp_serialization.csv)
+
+This benchmark requires that `g++-11` be installed:
+```bash
+sudo apt update
+sudo apt install g++-11
+```
+To replicate this benchmark, run:
+```bash
+git clone https://github.com/felixguendling/cpp-serialization-benchmark.git
+cd cpp-serialization-benchmark/
+git submodule update --init --recursive
+mkdir build
+cd build
+export CXX=/usr/bin/g++-11
+cmake -DCMAKE_BUILD_TYPE=Release ..
+make
+```
+A single benchmark run can now be performed like so:
+```bash
+./cpp-serialization-benchmark
+```
+However to produce more consistent results, CPU frequency scaling should first be disabled to minimize variance:
+```bash
+apt update
+apt install linux-cpupower
+cpupower frequency-set -g performance
+cpupower frequency-info
+```
+You should see:
+        
+        The governor "performance" may decide which speed to use
+
+The OS can also introduce variance by inconsistent scheduling of threads across NUMA-domains.
+To prevent this, the process and memory should be pinned.
+Also, not one but multiple runs will increase the consistency of the results.
+
+This command will perform 10 benchmark runs and write the results to `output.txt`:
+```bash
+lscpu >> output.txt && \
+numactl -H >> output.txt && \
+numactl --cpunodebind=0 --membind=0 ./cpp-serialization-benchmark >> output.txt && \
+numactl --cpunodebind=0 --membind=0 ./cpp-serialization-benchmark >> output.txt && \
+numactl --cpunodebind=0 --membind=0 ./cpp-serialization-benchmark >> output.txt && \
+numactl --cpunodebind=0 --membind=0 ./cpp-serialization-benchmark >> output.txt && \
+numactl --cpunodebind=0 --membind=0 ./cpp-serialization-benchmark >> output.txt && \
+numactl --cpunodebind=0 --membind=0 ./cpp-serialization-benchmark >> output.txt && \
+numactl --cpunodebind=0 --membind=0 ./cpp-serialization-benchmark >> output.txt && \
+numactl --cpunodebind=0 --membind=0 ./cpp-serialization-benchmark >> output.txt && \
+numactl --cpunodebind=0 --membind=0 ./cpp-serialization-benchmark >> output.txt && \
+numactl --cpunodebind=0 --membind=0 ./cpp-serialization-benchmark >> output.txt
+```
+
+
+# Original README:
+
 # C++ Serialization Benchmark  [![Build Status](https://travis-ci.org/felixguendling/cpp-serialization-benchmark.svg?branch=master)](https://travis-ci.org/felixguendling/cpp-serialization-benchmark)
 
 This benchmark suite accompanies the public release of the [Cista++](https://cista.rocks/) serialization library.

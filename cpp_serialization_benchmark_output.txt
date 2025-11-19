@@ -1,0 +1,400 @@
+---------------------------------------------------------------------------------------------------------------------
+Benchmark                                                          Time             CPU   Iterations UserCounters...
+---------------------------------------------------------------------------------------------------------------------
+BM_SERIALIZE<capnp_bench>                                       66.6 ms         66.6 ms           11 size=50.5093M
+BM_SERIALIZE<cista_offset_slim_bench>                           3.80 ms         3.80 ms          181 size=25.317M
+BM_SERIALIZE<cereal_bench>                                       141 ms          141 ms            5 size=37.829M
+BM_SERIALIZE<fbs_bench>                                         1859 ms         1859 ms            1 size=62.998M
+BM_SERIALIZE<cista_raw_bench>                                    660 ms          660 ms            1 size=176.378M
+BM_SERIALIZE<cista_offset_bench>                                 635 ms          635 ms            1 size=176.378M
+BM_SERIALIZE<zpp_bits_bench>                                    2.75 ms         2.75 ms          252 size=37.8066M
+BM_SERIALIZE<lite3_bench>                                       3.04 ms         3.04 ms          230 size=38.069M
+BM_SERIALIZE<lite3_context_api_bench>                           3.07 ms         3.07 ms          228 size=38.069M
+BM_SAFE_DESERIALIZE<capnp_bench>                               0.001 ms        0.001 ms       793807
+BM_SAFE_DESERIALIZE<cista_offset_slim_bench>                   0.169 ms        0.169 ms         4196
+BM_SAFE_DESERIALIZE<fbs_bench>                                  41.6 ms         41.6 ms           17
+BM_SAFE_DESERIALIZE<cista_offset_bench>                          273 ms          273 ms            3
+BM_SAFE_DESERIALIZE<cista_raw_bench>                             292 ms          292 ms            2
+BM_SAFE_DESERIALIZE<cereal_bench>                               99.6 ms         99.6 ms            7
+BM_SAFE_DESERIALIZE<zpp_bits_bench>                             1.91 ms         1.91 ms          360
+BM_SAFE_DESERIALIZE<lite3_bench>                                4.80 ms         4.80 ms          146
+BM_SAFE_DESERIALIZE<lite3_context_api_bench>                    4.79 ms         4.79 ms          146
+BM_FAST_DESERIALIZE<cista_raw_bench>                            32.8 ms         32.8 ms           22
+BM_TRAVERSE<cista_raw_bench>                                    81.7 ms         81.7 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_slim_bench>                            79.9 ms         79.9 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_bench>                                 79.8 ms         79.7 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cereal_bench>                                       78.4 ms         78.4 ms            9 nodeCount=1.87k
+BM_TRAVERSE<fbs_bench>                                          89.9 ms         89.9 ms            6 nodeCount=1.87k
+BM_TRAVERSE<capnp_bench>                                         208 ms          208 ms            3 nodeCount=1.87k
+BM_TRAVERSE<zpp_bits_bench>                                     78.5 ms         78.5 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_bench>                                        79.4 ms         79.4 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_context_api_bench>                            79.2 ms         79.2 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_slim_bench>       80.2 ms         80.2 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_bench>            80.1 ms         80.1 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_raw_bench>                113 ms          113 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<fbs_bench>                     90.3 ms         90.3 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cereal_bench>                   180 ms          180 ms            4 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<capnp_bench>                    213 ms          213 ms            3 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<zpp_bits_bench>                81.7 ms         81.7 ms            8 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_bench>                   84.3 ms         84.3 ms            7 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_context_api_bench>       85.2 ms         85.2 ms            7 nodeCount=1.87k
+---------------------------------------------------------------------------------------------------------------------
+Benchmark                                                          Time             CPU   Iterations UserCounters...
+---------------------------------------------------------------------------------------------------------------------
+BM_SERIALIZE<capnp_bench>                                       66.0 ms         66.0 ms           11 size=50.5093M
+BM_SERIALIZE<cista_offset_slim_bench>                           3.78 ms         3.78 ms          183 size=25.317M
+BM_SERIALIZE<cereal_bench>                                       129 ms          129 ms            5 size=37.829M
+BM_SERIALIZE<fbs_bench>                                         1826 ms         1826 ms            1 size=62.998M
+BM_SERIALIZE<cista_raw_bench>                                    646 ms          646 ms            1 size=176.378M
+BM_SERIALIZE<cista_offset_bench>                                 637 ms          637 ms            1 size=176.378M
+BM_SERIALIZE<zpp_bits_bench>                                    2.78 ms         2.78 ms          246 size=37.8066M
+BM_SERIALIZE<lite3_bench>                                       3.03 ms         3.03 ms          231 size=38.069M
+BM_SERIALIZE<lite3_context_api_bench>                           3.05 ms         3.05 ms          229 size=38.069M
+BM_SAFE_DESERIALIZE<capnp_bench>                               0.001 ms        0.001 ms       803744
+BM_SAFE_DESERIALIZE<cista_offset_slim_bench>                   0.168 ms        0.168 ms         4181
+BM_SAFE_DESERIALIZE<fbs_bench>                                  42.2 ms         42.2 ms           17
+BM_SAFE_DESERIALIZE<cista_offset_bench>                          274 ms          274 ms            3
+BM_SAFE_DESERIALIZE<cista_raw_bench>                             293 ms          293 ms            2
+BM_SAFE_DESERIALIZE<cereal_bench>                               99.6 ms         99.6 ms            7
+BM_SAFE_DESERIALIZE<zpp_bits_bench>                             1.89 ms         1.89 ms          364
+BM_SAFE_DESERIALIZE<lite3_bench>                                4.75 ms         4.75 ms          147
+BM_SAFE_DESERIALIZE<lite3_context_api_bench>                    4.73 ms         4.73 ms          148
+BM_FAST_DESERIALIZE<cista_raw_bench>                            32.9 ms         32.8 ms           21
+BM_TRAVERSE<cista_raw_bench>                                    81.6 ms         81.6 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_slim_bench>                            79.9 ms         79.9 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_bench>                                 79.5 ms         79.5 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cereal_bench>                                       78.7 ms         78.7 ms            9 nodeCount=1.87k
+BM_TRAVERSE<fbs_bench>                                          90.9 ms         90.9 ms            6 nodeCount=1.87k
+BM_TRAVERSE<capnp_bench>                                         212 ms          212 ms            3 nodeCount=1.87k
+BM_TRAVERSE<zpp_bits_bench>                                     78.6 ms         78.6 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_bench>                                        79.7 ms         79.7 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_context_api_bench>                            79.9 ms         79.9 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_slim_bench>       81.4 ms         81.4 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_bench>            79.9 ms         79.9 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_raw_bench>                113 ms          113 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<fbs_bench>                     90.2 ms         90.2 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cereal_bench>                   180 ms          180 ms            4 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<capnp_bench>                    225 ms          225 ms            3 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<zpp_bits_bench>                82.1 ms         82.1 ms            8 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_bench>                   86.0 ms         86.0 ms            7 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_context_api_bench>       85.5 ms         85.5 ms            8 nodeCount=1.87k
+---------------------------------------------------------------------------------------------------------------------
+Benchmark                                                          Time             CPU   Iterations UserCounters...
+---------------------------------------------------------------------------------------------------------------------
+BM_SERIALIZE<capnp_bench>                                       67.8 ms         67.8 ms           10 size=50.5093M
+BM_SERIALIZE<cista_offset_slim_bench>                           3.80 ms         3.80 ms          183 size=25.317M
+BM_SERIALIZE<cereal_bench>                                       127 ms          127 ms            5 size=37.829M
+BM_SERIALIZE<fbs_bench>                                         1850 ms         1850 ms            1 size=62.998M
+BM_SERIALIZE<cista_raw_bench>                                    667 ms          667 ms            1 size=176.378M
+BM_SERIALIZE<cista_offset_bench>                                 642 ms          642 ms            1 size=176.378M
+BM_SERIALIZE<zpp_bits_bench>                                    2.81 ms         2.81 ms          246 size=37.8066M
+BM_SERIALIZE<lite3_bench>                                       3.00 ms         3.00 ms          233 size=38.069M
+BM_SERIALIZE<lite3_context_api_bench>                           3.03 ms         3.03 ms          231 size=38.069M
+BM_SAFE_DESERIALIZE<capnp_bench>                               0.001 ms        0.001 ms       791131
+BM_SAFE_DESERIALIZE<cista_offset_slim_bench>                   0.168 ms        0.168 ms         4178
+BM_SAFE_DESERIALIZE<fbs_bench>                                  42.2 ms         42.2 ms           17
+BM_SAFE_DESERIALIZE<cista_offset_bench>                          274 ms          274 ms            3
+BM_SAFE_DESERIALIZE<cista_raw_bench>                             291 ms          291 ms            2
+BM_SAFE_DESERIALIZE<cereal_bench>                               99.6 ms         99.6 ms            7
+BM_SAFE_DESERIALIZE<zpp_bits_bench>                             1.91 ms         1.91 ms          359
+BM_SAFE_DESERIALIZE<lite3_bench>                                4.77 ms         4.77 ms          146
+BM_SAFE_DESERIALIZE<lite3_context_api_bench>                    4.76 ms         4.76 ms          146
+BM_FAST_DESERIALIZE<cista_raw_bench>                            32.7 ms         32.7 ms           22
+BM_TRAVERSE<cista_raw_bench>                                    81.7 ms         81.7 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_slim_bench>                            80.6 ms         80.6 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_bench>                                 79.7 ms         79.7 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cereal_bench>                                       79.1 ms         79.1 ms            9 nodeCount=1.87k
+BM_TRAVERSE<fbs_bench>                                          89.9 ms         89.9 ms            6 nodeCount=1.87k
+BM_TRAVERSE<capnp_bench>                                         209 ms          209 ms            3 nodeCount=1.87k
+BM_TRAVERSE<zpp_bits_bench>                                     78.8 ms         78.8 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_bench>                                        78.6 ms         78.6 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_context_api_bench>                            79.0 ms         79.0 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_slim_bench>       80.1 ms         80.1 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_bench>            79.5 ms         79.5 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_raw_bench>                113 ms          113 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<fbs_bench>                     90.2 ms         90.2 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cereal_bench>                   180 ms          180 ms            4 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<capnp_bench>                    208 ms          208 ms            3 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<zpp_bits_bench>                80.9 ms         80.9 ms            8 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_bench>                   84.8 ms         84.8 ms            7 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_context_api_bench>       83.8 ms         83.8 ms            7 nodeCount=1.87k
+---------------------------------------------------------------------------------------------------------------------
+Benchmark                                                          Time             CPU   Iterations UserCounters...
+---------------------------------------------------------------------------------------------------------------------
+BM_SERIALIZE<capnp_bench>                                       66.2 ms         66.2 ms           11 size=50.5093M
+BM_SERIALIZE<cista_offset_slim_bench>                           3.78 ms         3.78 ms          182 size=25.317M
+BM_SERIALIZE<cereal_bench>                                       137 ms          137 ms            5 size=37.829M
+BM_SERIALIZE<fbs_bench>                                         1821 ms         1821 ms            1 size=62.998M
+BM_SERIALIZE<cista_raw_bench>                                    655 ms          655 ms            1 size=176.378M
+BM_SERIALIZE<cista_offset_bench>                                 625 ms          625 ms            1 size=176.378M
+BM_SERIALIZE<zpp_bits_bench>                                    2.76 ms         2.76 ms          248 size=37.8066M
+BM_SERIALIZE<lite3_bench>                                       3.03 ms         3.03 ms          231 size=38.069M
+BM_SERIALIZE<lite3_context_api_bench>                           3.05 ms         3.05 ms          230 size=38.069M
+BM_SAFE_DESERIALIZE<capnp_bench>                               0.001 ms        0.001 ms       808708
+BM_SAFE_DESERIALIZE<cista_offset_slim_bench>                   0.173 ms        0.173 ms         4047
+BM_SAFE_DESERIALIZE<fbs_bench>                                  40.9 ms         40.9 ms           17
+BM_SAFE_DESERIALIZE<cista_offset_bench>                          278 ms          278 ms            3
+BM_SAFE_DESERIALIZE<cista_raw_bench>                             283 ms          283 ms            2
+BM_SAFE_DESERIALIZE<cereal_bench>                               99.6 ms         99.6 ms            7
+BM_SAFE_DESERIALIZE<zpp_bits_bench>                             1.90 ms         1.90 ms          357
+BM_SAFE_DESERIALIZE<lite3_bench>                                4.74 ms         4.74 ms          148
+BM_SAFE_DESERIALIZE<lite3_context_api_bench>                    4.74 ms         4.74 ms          148
+BM_FAST_DESERIALIZE<cista_raw_bench>                            32.7 ms         32.7 ms           21
+BM_TRAVERSE<cista_raw_bench>                                    83.2 ms         83.2 ms            8 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_slim_bench>                            80.4 ms         80.4 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_bench>                                 79.4 ms         79.4 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cereal_bench>                                       82.0 ms         82.0 ms            9 nodeCount=1.87k
+BM_TRAVERSE<fbs_bench>                                          90.2 ms         90.2 ms            6 nodeCount=1.87k
+BM_TRAVERSE<capnp_bench>                                         210 ms          210 ms            3 nodeCount=1.87k
+BM_TRAVERSE<zpp_bits_bench>                                     78.9 ms         78.9 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_bench>                                        79.5 ms         79.5 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_context_api_bench>                            80.4 ms         80.4 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_slim_bench>       81.9 ms         81.9 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_bench>            80.5 ms         80.5 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_raw_bench>                114 ms          114 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<fbs_bench>                     90.4 ms         90.4 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cereal_bench>                   180 ms          180 ms            4 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<capnp_bench>                    209 ms          209 ms            3 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<zpp_bits_bench>                81.4 ms         81.4 ms            8 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_bench>                   86.4 ms         86.4 ms            7 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_context_api_bench>       84.8 ms         84.8 ms            7 nodeCount=1.87k
+---------------------------------------------------------------------------------------------------------------------
+Benchmark                                                          Time             CPU   Iterations UserCounters...
+---------------------------------------------------------------------------------------------------------------------
+BM_SERIALIZE<capnp_bench>                                       66.9 ms         66.9 ms           10 size=50.5093M
+BM_SERIALIZE<cista_offset_slim_bench>                           3.81 ms         3.81 ms          181 size=25.317M
+BM_SERIALIZE<cereal_bench>                                       126 ms          126 ms            5 size=37.829M
+BM_SERIALIZE<fbs_bench>                                         1856 ms         1856 ms            1 size=62.998M
+BM_SERIALIZE<cista_raw_bench>                                    673 ms          673 ms            1 size=176.378M
+BM_SERIALIZE<cista_offset_bench>                                 645 ms          645 ms            1 size=176.378M
+BM_SERIALIZE<zpp_bits_bench>                                    2.78 ms         2.78 ms          245 size=37.8066M
+BM_SERIALIZE<lite3_bench>                                       3.06 ms         3.06 ms          229 size=38.069M
+BM_SERIALIZE<lite3_context_api_bench>                           3.08 ms         3.08 ms          228 size=38.069M
+BM_SAFE_DESERIALIZE<capnp_bench>                               0.001 ms        0.001 ms       783635
+BM_SAFE_DESERIALIZE<cista_offset_slim_bench>                   0.168 ms        0.168 ms         4227
+BM_SAFE_DESERIALIZE<fbs_bench>                                  41.6 ms         41.6 ms           17
+BM_SAFE_DESERIALIZE<cista_offset_bench>                          273 ms          273 ms            3
+BM_SAFE_DESERIALIZE<cista_raw_bench>                             280 ms          280 ms            2
+BM_SAFE_DESERIALIZE<cereal_bench>                               99.6 ms         99.6 ms            7
+BM_SAFE_DESERIALIZE<zpp_bits_bench>                             1.91 ms         1.91 ms          359
+BM_SAFE_DESERIALIZE<lite3_bench>                                4.78 ms         4.78 ms          147
+BM_SAFE_DESERIALIZE<lite3_context_api_bench>                    4.76 ms         4.76 ms          147
+BM_FAST_DESERIALIZE<cista_raw_bench>                            32.8 ms         32.8 ms           22
+BM_TRAVERSE<cista_raw_bench>                                    80.7 ms         80.7 ms            8 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_slim_bench>                            79.7 ms         79.7 ms            8 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_bench>                                 79.9 ms         79.9 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cereal_bench>                                       78.3 ms         78.3 ms            9 nodeCount=1.87k
+BM_TRAVERSE<fbs_bench>                                          89.9 ms         89.9 ms            6 nodeCount=1.87k
+BM_TRAVERSE<capnp_bench>                                         211 ms          211 ms            3 nodeCount=1.87k
+BM_TRAVERSE<zpp_bits_bench>                                     78.7 ms         78.7 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_bench>                                        80.0 ms         80.0 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_context_api_bench>                            79.7 ms         79.7 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_slim_bench>       80.6 ms         80.6 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_bench>            80.0 ms         80.0 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_raw_bench>                113 ms          113 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<fbs_bench>                     90.2 ms         90.2 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cereal_bench>                   186 ms          186 ms            4 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<capnp_bench>                    211 ms          211 ms            3 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<zpp_bits_bench>                81.3 ms         81.3 ms            8 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_bench>                   84.1 ms         84.1 ms            7 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_context_api_bench>       83.6 ms         83.6 ms            7 nodeCount=1.87k
+---------------------------------------------------------------------------------------------------------------------
+Benchmark                                                          Time             CPU   Iterations UserCounters...
+---------------------------------------------------------------------------------------------------------------------
+BM_SERIALIZE<capnp_bench>                                       65.7 ms         65.7 ms           11 size=50.5093M
+BM_SERIALIZE<cista_offset_slim_bench>                           3.76 ms         3.76 ms          184 size=25.317M
+BM_SERIALIZE<cereal_bench>                                       134 ms          134 ms            5 size=37.829M
+BM_SERIALIZE<fbs_bench>                                         1836 ms         1836 ms            1 size=62.998M
+BM_SERIALIZE<cista_raw_bench>                                    651 ms          651 ms            1 size=176.378M
+BM_SERIALIZE<cista_offset_bench>                                 637 ms          637 ms            1 size=176.378M
+BM_SERIALIZE<zpp_bits_bench>                                    2.73 ms         2.73 ms          250 size=37.8066M
+BM_SERIALIZE<lite3_bench>                                       3.01 ms         3.01 ms          232 size=38.069M
+BM_SERIALIZE<lite3_context_api_bench>                           3.03 ms         3.03 ms          230 size=38.069M
+BM_SAFE_DESERIALIZE<capnp_bench>                               0.001 ms        0.001 ms       791170
+BM_SAFE_DESERIALIZE<cista_offset_slim_bench>                   0.168 ms        0.168 ms         4178
+BM_SAFE_DESERIALIZE<fbs_bench>                                  41.5 ms         41.5 ms           17
+BM_SAFE_DESERIALIZE<cista_offset_bench>                          274 ms          273 ms            3
+BM_SAFE_DESERIALIZE<cista_raw_bench>                             294 ms          294 ms            2
+BM_SAFE_DESERIALIZE<cereal_bench>                               99.6 ms         99.6 ms            7
+BM_SAFE_DESERIALIZE<zpp_bits_bench>                             1.88 ms         1.88 ms          363
+BM_SAFE_DESERIALIZE<lite3_bench>                                4.73 ms         4.74 ms          148
+BM_SAFE_DESERIALIZE<lite3_context_api_bench>                    4.71 ms         4.71 ms          148
+BM_FAST_DESERIALIZE<cista_raw_bench>                            32.6 ms         32.6 ms           22
+BM_TRAVERSE<cista_raw_bench>                                    81.4 ms         81.4 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_slim_bench>                            80.0 ms         80.0 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_bench>                                 79.5 ms         79.5 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cereal_bench>                                       78.9 ms         78.9 ms            9 nodeCount=1.87k
+BM_TRAVERSE<fbs_bench>                                          89.7 ms         89.7 ms            6 nodeCount=1.87k
+BM_TRAVERSE<capnp_bench>                                         210 ms          210 ms            3 nodeCount=1.87k
+BM_TRAVERSE<zpp_bits_bench>                                     78.5 ms         78.4 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_bench>                                        79.9 ms         79.9 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_context_api_bench>                            79.1 ms         79.1 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_slim_bench>       80.3 ms         80.3 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_bench>            79.6 ms         79.6 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_raw_bench>                113 ms          113 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<fbs_bench>                     89.9 ms         89.9 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cereal_bench>                   179 ms          179 ms            4 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<capnp_bench>                    209 ms          209 ms            3 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<zpp_bits_bench>                81.1 ms         81.1 ms            8 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_bench>                   85.6 ms         85.6 ms            7 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_context_api_bench>       84.3 ms         84.3 ms            7 nodeCount=1.87k
+---------------------------------------------------------------------------------------------------------------------
+Benchmark                                                          Time             CPU   Iterations UserCounters...
+---------------------------------------------------------------------------------------------------------------------
+BM_SERIALIZE<capnp_bench>                                       65.4 ms         65.1 ms           11 size=50.5093M
+BM_SERIALIZE<cista_offset_slim_bench>                           3.76 ms         3.76 ms          184 size=25.317M
+BM_SERIALIZE<cereal_bench>                                       128 ms          128 ms            5 size=37.829M
+BM_SERIALIZE<fbs_bench>                                         1828 ms         1828 ms            1 size=62.998M
+BM_SERIALIZE<cista_raw_bench>                                    651 ms          651 ms            1 size=176.378M
+BM_SERIALIZE<cista_offset_bench>                                 636 ms          636 ms            1 size=176.378M
+BM_SERIALIZE<zpp_bits_bench>                                    2.73 ms         2.73 ms          250 size=37.8066M
+BM_SERIALIZE<lite3_bench>                                       2.89 ms         2.89 ms          242 size=38.069M
+BM_SERIALIZE<lite3_context_api_bench>                           2.90 ms         2.90 ms          241 size=38.069M
+BM_SAFE_DESERIALIZE<capnp_bench>                               0.001 ms        0.001 ms       805847
+BM_SAFE_DESERIALIZE<cista_offset_slim_bench>                   0.168 ms        0.168 ms         4170
+BM_SAFE_DESERIALIZE<fbs_bench>                                  40.9 ms         40.9 ms           17
+BM_SAFE_DESERIALIZE<cista_offset_bench>                          273 ms          273 ms            3
+BM_SAFE_DESERIALIZE<cista_raw_bench>                             291 ms          291 ms            2
+BM_SAFE_DESERIALIZE<cereal_bench>                               94.7 ms         94.7 ms            7
+BM_SAFE_DESERIALIZE<zpp_bits_bench>                             1.90 ms         1.90 ms          365
+BM_SAFE_DESERIALIZE<lite3_bench>                                4.72 ms         4.72 ms          148
+BM_SAFE_DESERIALIZE<lite3_context_api_bench>                    4.71 ms         4.71 ms          148
+BM_FAST_DESERIALIZE<cista_raw_bench>                            32.5 ms         32.5 ms           22
+BM_TRAVERSE<cista_raw_bench>                                    80.5 ms         80.5 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_slim_bench>                            79.4 ms         79.4 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_bench>                                 79.7 ms         79.7 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cereal_bench>                                       78.3 ms         78.3 ms            9 nodeCount=1.87k
+BM_TRAVERSE<fbs_bench>                                          92.7 ms         92.7 ms            6 nodeCount=1.87k
+BM_TRAVERSE<capnp_bench>                                         211 ms          211 ms            3 nodeCount=1.87k
+BM_TRAVERSE<zpp_bits_bench>                                     78.6 ms         78.6 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_bench>                                        78.7 ms         78.7 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_context_api_bench>                            78.6 ms         78.6 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_slim_bench>       79.5 ms         79.5 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_bench>            79.8 ms         79.8 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_raw_bench>                113 ms          113 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<fbs_bench>                     91.5 ms         91.5 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cereal_bench>                   180 ms          180 ms            4 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<capnp_bench>                    208 ms          208 ms            3 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<zpp_bits_bench>                81.0 ms         81.0 ms            8 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_bench>                   84.4 ms         84.4 ms            7 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_context_api_bench>       83.9 ms         83.9 ms            7 nodeCount=1.87k
+---------------------------------------------------------------------------------------------------------------------
+Benchmark                                                          Time             CPU   Iterations UserCounters...
+---------------------------------------------------------------------------------------------------------------------
+BM_SERIALIZE<capnp_bench>                                       67.5 ms         67.5 ms           10 size=50.5093M
+BM_SERIALIZE<cista_offset_slim_bench>                           3.81 ms         3.81 ms          182 size=25.317M
+BM_SERIALIZE<cereal_bench>                                       127 ms          127 ms            5 size=37.829M
+BM_SERIALIZE<fbs_bench>                                         1863 ms         1863 ms            1 size=62.998M
+BM_SERIALIZE<cista_raw_bench>                                    653 ms          653 ms            1 size=176.378M
+BM_SERIALIZE<cista_offset_bench>                                 647 ms          647 ms            1 size=176.378M
+BM_SERIALIZE<zpp_bits_bench>                                    2.78 ms         2.78 ms          249 size=37.8066M
+BM_SERIALIZE<lite3_bench>                                       3.06 ms         3.06 ms          229 size=38.069M
+BM_SERIALIZE<lite3_context_api_bench>                           3.08 ms         3.08 ms          227 size=38.069M
+BM_SAFE_DESERIALIZE<capnp_bench>                               0.001 ms        0.001 ms       789034
+BM_SAFE_DESERIALIZE<cista_offset_slim_bench>                   0.173 ms        0.173 ms         4095
+BM_SAFE_DESERIALIZE<fbs_bench>                                  42.1 ms         42.1 ms           17
+BM_SAFE_DESERIALIZE<cista_offset_bench>                          277 ms          277 ms            3
+BM_SAFE_DESERIALIZE<cista_raw_bench>                             295 ms          295 ms            2
+BM_SAFE_DESERIALIZE<cereal_bench>                               99.6 ms         99.6 ms            7
+BM_SAFE_DESERIALIZE<zpp_bits_bench>                             1.90 ms         1.90 ms          359
+BM_SAFE_DESERIALIZE<lite3_bench>                                4.79 ms         4.79 ms          146
+BM_SAFE_DESERIALIZE<lite3_context_api_bench>                    4.78 ms         4.78 ms          146
+BM_FAST_DESERIALIZE<cista_raw_bench>                            32.2 ms         32.2 ms           22
+BM_TRAVERSE<cista_raw_bench>                                    82.1 ms         82.1 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_slim_bench>                            80.2 ms         80.2 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_bench>                                 79.5 ms         79.5 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cereal_bench>                                       79.9 ms         79.9 ms            9 nodeCount=1.87k
+BM_TRAVERSE<fbs_bench>                                          91.3 ms         91.3 ms            6 nodeCount=1.87k
+BM_TRAVERSE<capnp_bench>                                         214 ms          214 ms            3 nodeCount=1.87k
+BM_TRAVERSE<zpp_bits_bench>                                     78.3 ms         78.3 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_bench>                                        79.0 ms         79.0 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_context_api_bench>                            79.4 ms         79.4 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_slim_bench>       80.3 ms         80.3 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_bench>            81.5 ms         81.5 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_raw_bench>                113 ms          113 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<fbs_bench>                     89.5 ms         89.5 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cereal_bench>                   179 ms          179 ms            4 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<capnp_bench>                    209 ms          209 ms            3 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<zpp_bits_bench>                80.7 ms         80.7 ms            8 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_bench>                   83.8 ms         83.8 ms            7 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_context_api_bench>       83.5 ms         83.5 ms            7 nodeCount=1.87k
+---------------------------------------------------------------------------------------------------------------------
+Benchmark                                                          Time             CPU   Iterations UserCounters...
+---------------------------------------------------------------------------------------------------------------------
+BM_SERIALIZE<capnp_bench>                                       66.9 ms         66.9 ms           10 size=50.5093M
+BM_SERIALIZE<cista_offset_slim_bench>                           3.79 ms         3.79 ms          182 size=25.317M
+BM_SERIALIZE<cereal_bench>                                       128 ms          128 ms            5 size=37.829M
+BM_SERIALIZE<fbs_bench>                                         1866 ms         1866 ms            1 size=62.998M
+BM_SERIALIZE<cista_raw_bench>                                    668 ms          668 ms            1 size=176.378M
+BM_SERIALIZE<cista_offset_bench>                                 646 ms          646 ms            1 size=176.378M
+BM_SERIALIZE<zpp_bits_bench>                                    2.76 ms         2.76 ms          249 size=37.8066M
+BM_SERIALIZE<lite3_bench>                                       3.01 ms         3.01 ms          232 size=38.069M
+BM_SERIALIZE<lite3_context_api_bench>                           3.03 ms         3.03 ms          231 size=38.069M
+BM_SAFE_DESERIALIZE<capnp_bench>                               0.001 ms        0.001 ms       802657
+BM_SAFE_DESERIALIZE<cista_offset_slim_bench>                   0.168 ms        0.168 ms         4177
+BM_SAFE_DESERIALIZE<fbs_bench>                                  41.7 ms         41.7 ms           17
+BM_SAFE_DESERIALIZE<cista_offset_bench>                          273 ms          273 ms            3
+BM_SAFE_DESERIALIZE<cista_raw_bench>                             280 ms          280 ms            2
+BM_SAFE_DESERIALIZE<cereal_bench>                               99.6 ms         99.6 ms            7
+BM_SAFE_DESERIALIZE<zpp_bits_bench>                             1.90 ms         1.90 ms          361
+BM_SAFE_DESERIALIZE<lite3_bench>                                4.80 ms         4.80 ms          146
+BM_SAFE_DESERIALIZE<lite3_context_api_bench>                    4.79 ms         4.79 ms          146
+BM_FAST_DESERIALIZE<cista_raw_bench>                            32.6 ms         32.6 ms           21
+BM_TRAVERSE<cista_raw_bench>                                    81.8 ms         81.8 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_slim_bench>                            80.1 ms         80.1 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_bench>                                 79.6 ms         79.6 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cereal_bench>                                       79.7 ms         79.7 ms            9 nodeCount=1.87k
+BM_TRAVERSE<fbs_bench>                                          90.5 ms         90.5 ms            6 nodeCount=1.87k
+BM_TRAVERSE<capnp_bench>                                         207 ms          207 ms            3 nodeCount=1.87k
+BM_TRAVERSE<zpp_bits_bench>                                     79.0 ms         79.0 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_bench>                                        78.8 ms         78.8 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_context_api_bench>                            81.9 ms         81.9 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_slim_bench>       80.2 ms         80.2 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_bench>            80.2 ms         80.2 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_raw_bench>                114 ms          114 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<fbs_bench>                     90.9 ms         90.9 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cereal_bench>                   183 ms          183 ms            4 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<capnp_bench>                    210 ms          210 ms            3 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<zpp_bits_bench>                81.0 ms         81.0 ms            8 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_bench>                   83.6 ms         83.6 ms            7 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_context_api_bench>       83.5 ms         83.5 ms            7 nodeCount=1.87k
+---------------------------------------------------------------------------------------------------------------------
+Benchmark                                                          Time             CPU   Iterations UserCounters...
+---------------------------------------------------------------------------------------------------------------------
+BM_SERIALIZE<capnp_bench>                                       66.8 ms         66.8 ms           10 size=50.5093M
+BM_SERIALIZE<cista_offset_slim_bench>                           3.82 ms         3.81 ms          181 size=25.317M
+BM_SERIALIZE<cereal_bench>                                       127 ms          127 ms            5 size=37.829M
+BM_SERIALIZE<fbs_bench>                                         1853 ms         1853 ms            1 size=62.998M
+BM_SERIALIZE<cista_raw_bench>                                    658 ms          658 ms            1 size=176.378M
+BM_SERIALIZE<cista_offset_bench>                                 641 ms          641 ms            1 size=176.378M
+BM_SERIALIZE<zpp_bits_bench>                                    2.75 ms         2.75 ms          250 size=37.8066M
+BM_SERIALIZE<lite3_bench>                                       3.06 ms         3.06 ms          228 size=38.069M
+BM_SERIALIZE<lite3_context_api_bench>                           3.08 ms         3.08 ms          227 size=38.069M
+BM_SAFE_DESERIALIZE<capnp_bench>                               0.001 ms        0.001 ms       792378
+BM_SAFE_DESERIALIZE<cista_offset_slim_bench>                   0.168 ms        0.168 ms         4181
+BM_SAFE_DESERIALIZE<fbs_bench>                                  42.2 ms         42.2 ms           17
+BM_SAFE_DESERIALIZE<cista_offset_bench>                          274 ms          273 ms            3
+BM_SAFE_DESERIALIZE<cista_raw_bench>                             293 ms          293 ms            2
+BM_SAFE_DESERIALIZE<cereal_bench>                               96.1 ms         96.1 ms            7
+BM_SAFE_DESERIALIZE<zpp_bits_bench>                             1.92 ms         1.92 ms          358
+BM_SAFE_DESERIALIZE<lite3_bench>                                4.78 ms         4.78 ms          147
+BM_SAFE_DESERIALIZE<lite3_context_api_bench>                    4.78 ms         4.78 ms          146
+BM_FAST_DESERIALIZE<cista_raw_bench>                            32.8 ms         32.8 ms           22
+BM_TRAVERSE<cista_raw_bench>                                    80.6 ms         80.6 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_slim_bench>                            79.7 ms         79.7 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cista_offset_bench>                                 79.4 ms         79.4 ms            9 nodeCount=1.87k
+BM_TRAVERSE<cereal_bench>                                       78.4 ms         78.4 ms            9 nodeCount=1.87k
+BM_TRAVERSE<fbs_bench>                                          90.3 ms         90.3 ms            6 nodeCount=1.87k
+BM_TRAVERSE<capnp_bench>                                         209 ms          209 ms            3 nodeCount=1.87k
+BM_TRAVERSE<zpp_bits_bench>                                     78.8 ms         78.8 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_bench>                                        80.3 ms         80.3 ms            9 nodeCount=1.87k
+BM_TRAVERSE<lite3_context_api_bench>                            78.7 ms         78.7 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_slim_bench>       80.1 ms         80.1 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_offset_bench>            79.1 ms         79.1 ms            9 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cista_raw_bench>                114 ms          114 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<fbs_bench>                     90.4 ms         90.4 ms            6 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<cereal_bench>                   180 ms          180 ms            4 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<capnp_bench>                    208 ms          208 ms            3 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<zpp_bits_bench>                80.9 ms         80.9 ms            8 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_bench>                   86.2 ms         86.2 ms            7 nodeCount=1.87k
+BM_FAST_DESERIALIZE_AND_TRAVERSE<lite3_context_api_bench>       83.2 ms         83.2 ms            8 nodeCount=1.87k
