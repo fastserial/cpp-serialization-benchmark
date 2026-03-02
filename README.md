@@ -26,7 +26,7 @@ sudo apt install g++-11
 ```
 To replicate this benchmark, run:
 ```bash
-git clone https://github.com/felixguendling/cpp-serialization-benchmark.git
+git clone https://github.com/fastserial/cpp-serialization-benchmark.git
 cd cpp-serialization-benchmark/
 git submodule update --init --recursive
 mkdir build
